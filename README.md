@@ -12,7 +12,7 @@ Abstract: Reverse Engineering (RE) of Integrated Circuits (ICs) involves studyin
 This repository includes the implementation of proposed algorithm in the ISQED2025 paper.
 
 #### Python dependencies 
-The required python dependencies can be found at `docs/requirements.txt`
+The required python dependencies can be found at `docs/requirements.txt`, all required dependencies can be installed via the requirement file.
 
 #### Working Folder Structure
 - **project_root/** (Main project directory)
@@ -37,5 +37,15 @@ The required python dependencies can be found at `docs/requirements.txt`
   - `main.py` (Script for running the algorithm)
 
 #### Code Execution
-Use the following command to execute: `python main.py`. You can change the arguments in `main.py` for different design and parameters.
+Use command `python main.py` to execute the algorithm: the default design is `des-32nm`.
 
+To customize the parameters, provide them as command line arguments, for example:
+
+`python main.py --data_root "./dataset" --design "des" --node 32 --increment 10 --encodingPath "./encodings" --resultPath "./results" --population_size 300 --upper_size 50 --lower_size 5 --GA_threshold 0.95 --max_iter 2000` 
+
+Note: If it is the first time to execute the script, use default `n_components` argument. If the pre-processing step has been executed, you can pass the corresponding `n_components` to skip pre-processing. 
+
+You can always verify the output:
+- The script will log its progress, check the console output for logs.
+- Encodings will be saved in the `encodingPath` directory.
+- Results will be saved in the `resultPath` directory. 
