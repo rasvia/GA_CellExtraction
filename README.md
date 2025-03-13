@@ -1,4 +1,4 @@
-## GA-assisted Golden-Free Standard Cell Library Extraction<br><sub>Official PyTorch implementation of the ISQED2025 paper</sub>
+## GA-assisted Golden-Free Standard Cell Library Extraction<br><sub>Official implementation of the ISQED2025 paper</sub>
 
 ![Teaser image](./docs/framework_cropped.pdf)
 
