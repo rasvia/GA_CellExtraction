@@ -11,7 +11,7 @@ parser.add_argument('--data_root', type=str, default='./data', help='Data root d
 parser.add_argument('--design', type=str, default='des', help='layout design')
 parser.add_argument('--node', type=int, default=32, help='node technology')
 parser.add_argument('--increment', type=int, default=5, help='increment for OMP')
-parser.add_argument('--n_components', type=int, default=130, help='number of selected columns')
+parser.add_argument('--n_components', type=int, default=0, help='number of selected columns')
 parser.add_argument('--encodingPath', type=str, default='./encodings', help='dir for saving encodings')
 parser.add_argument('--resultPath', type=str, default='./results', help='dir for saving results')
 parser.add_argument('--population_size', type=int, default=200, help='population size for GA')
