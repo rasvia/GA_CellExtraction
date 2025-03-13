@@ -1,1 +1,1 @@
-Required Python Dependencies
+Python Dependencies
